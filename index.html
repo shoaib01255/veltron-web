@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VELTRON — VLN</title>
+<style>
+:root{--primary:#132e45;--accent:#d8f36a;--bg:#f3f6f8;--text:#172a37;--muted:#617584;--line:#d8e1e7}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--text)}
+a{color:inherit}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:22px clamp(20px,5vw,72px);background:var(--primary);color:white}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800;letter-spacing:.12em}
+.brandmark{width:42px;height:42px;border-radius:13px;overflow:hidden;background:var(--accent)}
+.brandmark img{width:100%;height:100%;object-fit:cover;display:block}
+.network{border:1px solid #ffffff55;border-radius:999px;padding:8px 13px;font-size:12px;letter-spacing:.08em}
+.hero{background:var(--primary);color:white;padding:clamp(48px,9vw,108px) clamp(20px,8vw,120px) clamp(70px,10vw,125px);position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;right:-90px;top:10px;width:360px;height:360px;border:1px solid #ffffff25;border-radius:50%;box-shadow:0 0 0 42px #ffffff08,0 0 0 85px #ffffff06;pointer-events:none}
+.eyebrow{color:var(--accent);text-transform:uppercase;letter-spacing:.2em;font-size:12px;font-weight:700}
+h1{font-size:clamp(54px,10vw,112px);letter-spacing:-.075em;line-height:.95;margin:20px 0;max-width:850px}
+.hero p{font-size:clamp(16px,2vw,20px);line-height:1.7;max-width:620px;color:#d9e5ed}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.button{border:0;cursor:pointer;font:700 14px inherit;border-radius:12px;padding:14px 18px;text-decoration:none;display:inline-flex;align-items:center;gap:8px}
+.button.primary{background:var(--accent);color:#172a37}
+.button.secondary{background:#ffffff12;color:white;border:1px solid #ffffff55}
+main{max-width:1120px;margin:0 auto;padding:55px clamp(20px,5vw,40px) 70px}
+.section-label{text-transform:uppercase;font-size:11px;font-weight:800;letter-spacing:.18em;color:#567083}
+h2{font-size:30px;letter-spacing:-.04em;margin:10px 0 18px}
+.intro{max-width:730px;line-height:1.8;color:#526574}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:30px}
+.card{border:1px solid var(--line);background:white;border-radius:18px;padding:24px;min-width:0}
+.label{font-size:12px;color:var(--muted);margin-bottom:12px}
+.value{font-weight:800;font-size:20px;overflow-wrap:anywhere}
+.sub{color:var(--muted);font-size:13px;margin-top:8px;line-height:1.6}
+.address-box{margin-top:28px;padding:25px;background:#e8eef2;border-radius:18px}
+.address-head{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px}
+.address{font:13px/1.7 ui-monospace,SFMono-Regular,Menlo,monospace;overflow-wrap:anywhere;margin:12px 0 0}
+.copy{border:1px solid #b9c8d2;background:transparent;color:inherit;padding:9px 13px;border-radius:10px;cursor:pointer;font-weight:700}
+.notice{font-size:13px;line-height:1.7;color:var(--muted);margin-top:28px}
+.section{margin-top:58px}
+.two-col{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:24px}
+.detail-list{list-style:none;margin:0;padding:0}
+.detail-list li{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;padding:15px 0;border-bottom:1px solid var(--line)}
+.detail-list li:last-child{border-bottom:0}
+.detail-list span{color:var(--muted)}
+.detail-list strong{text-align:right;overflow-wrap:anywhere}
+.faq details{border-bottom:1px solid var(--line);padding:17px 0}
+.faq summary{cursor:pointer;font-weight:750}
+.faq details p{color:#526574;line-height:1.7;margin-bottom:0}
+.pill{display:inline-block;border-radius:999px;padding:7px 11px;background:#e8eef2;font-size:12px;font-weight:700}
+footer{border-top:1px solid var(--line);padding:25px clamp(20px,5vw,40px);text-align:center;font-size:12px;color:var(--muted)}
+@media(max-width:760px){.grid,.two-col{grid-template-columns:1fr}.topbar{align-items:flex-start;gap:14px}.network{white-space:nowrap}.hero:after{right:-210px}.detail-list li{flex-direction:column;gap:5px}.detail-list strong{text-align:left}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span class="brandmark"><img src="https://gateway.pinata.cloud/ipfs/bafkreibrj3z6iz5xz66bxiqbwqpuvqxupadracxtrnkhjw5hcx3cutidke" alt="VELTRON logo"></span><span>VELTRON</span></div>
+  <span class="network">BUILT ON SOLANA</span>
+</header>
+<section class="hero">
+  <div class="eyebrow">Digital token · VLN</div>
+  <h1>Move forward<br>with VELTRON.</h1>
+  <p>VELTRON (VLN) is a digital token on the Solana blockchain. Explore the token’s public identifiers, metadata reference, and project information on this page.</p>
+  <div class="actions">
+    <a class="button primary" href="#token-details">Explore token details ↓</a>
+    <a class="button secondary" href="https://solscan.io/token/5JRKXjfoc9MioEUFSrHeMF9RrEjZpHAvkPTZPwMcjkJ8" target="_blank" rel="noreferrer">View on Solscan ↗</a>
+    <a class="button secondary" href="https://explorer.solana.com/address/5JRKXjfoc9MioEUFSrHeMF9RrEjZpHAvkPTZPwMcjkJ8" target="_blank" rel="noreferrer">Solana Explorer ↗</a>
+  </div>
+</section>
+<main id="token-details">
+  <div class="section-label">Token information</div><h2>VELTRON at a glance</h2>
+  <p class="intro">Use the details below to identify the token on Solana explorers. Token information is provided for reference; this page does not promise returns or recommend an investment.</p>
+  <div class="grid">
+    <article class="card"><div class="label">Token name</div><div class="value">VELTRON</div><div class="sub">Project token</div></article>
+    <article class="card"><div class="label">Ticker symbol</div><div class="value">VLN</div><div class="sub">Token symbol</div></article>
+    <article class="card"><div class="label">Blockchain</div><div class="value">Solana</div><div class="sub">Solana network token</div></article>
+  </div>
+  <section class="address-box">
+    <div class="address-head"><div><div class="section-label">Mint address</div><strong>Token identifier</strong></div><button class="copy" id="copyMint" type="button">Copy address</button></div>
+    <p class="address" id="mintAddress">5JRKXjfoc9MioEUFSrHeMF9RrEjZpHAvkPTZPwMcjkJ8</p>
+  </section>
+  <section class="section">
+    <div class="section-label">Project overview</div><h2>About VELTRON</h2>
+    <p class="intro">VELTRON is identified on the Solana blockchain by its mint address and token metadata. This page is informational only and does not represent an offer to sell tokens or a promise of future features, value, or returns.</p>
+    <div class="two-col">
+      <article class="card"><span class="pill">Token identity</span><h3>Public details</h3><ul class="detail-list"><li><span>Name</span><strong>VELTRON</strong></li><li><span>Symbol</span><strong>VLN</strong></li><li><span>Network</span><strong>Solana</strong></li></ul></article>
+      <article class="card"><span class="pill">On-chain reference</span><h3>Explore independently</h3><p class="sub">Use a blockchain explorer to inspect the token address and available on-chain information.</p><div class="actions"><a class="button primary" href="https://explorer.solana.com/address/5JRKXjfoc9MioEUFSrHeMF9RrEjZpHAvkPTZPwMcjkJ8" target="_blank" rel="noreferrer">Open Solana Explorer ↗</a></div></article>
+    </div>
+  </section>
+  <section class="section">
+    <div class="section-label">Metadata</div><h2>Token metadata reference</h2>
+    <p class="intro">The metadata URI currently associated with the token points to the following public JSON resource.</p>
+    <div class="address-box"><div class="address-head"><strong>Metadata URI</strong><button class="copy" id="copyMetadata" type="button">Copy metadata URI</button></div><p class="address" id="metadataUri">https://gateway.pinata.cloud/ipfs/bafkreicm7lpwikhry7haii2tnb7jvgyw6jnzkffy6am4ocipal2xhwavza</p><div class="actions"><a class="button primary" href="https://gateway.pinata.cloud/ipfs/bafkreicm7lpwikhry7haii2tnb7jvgyw6jnzkffy6am4ocipal2xhwavza" target="_blank" rel="noreferrer">View metadata JSON ↗</a></div></div>
+  </section>
+  <section class="section faq">
+    <div class="section-label">Help & safety</div><h2>Frequently asked questions</h2>
+    <details><summary>How do I identify the VELTRON token?</summary><p>Check the complete mint address on a trusted Solana blockchain explorer. Do not rely on the name or symbol alone, because token names can be copied.</p></details>
+    <details><summary>Does this page guarantee token value or returns?</summary><p>No. This page is informational only. Digital tokens can be volatile, and no future value or return is promised.</p></details>
+    <details><summary>Why might an explorer not show the logo?</summary><p>Explorers may use different metadata indexing and caching processes. A logo appearing on one explorer does not guarantee that every explorer will display it immediately.</p></details>
+    <details><summary>Is this page the official on-chain record?</summary><p>No. Use the mint address and on-chain data from a blockchain explorer as the reference for token identification.</p></details>
+  </section>
+  <p class="notice"><strong>Notice:</strong> Digital tokens can be volatile and involve risk. Verify token details independently before interacting with any token or wallet. Never share your wallet’s recovery phrase or private key.</p>
+</main>
+<footer>VELTRON · VLN · Solana · Informational page</footer>
+<script>
+async function copyText(sourceId, buttonId, defaultLabel) {
+  const text = document.getElementById(sourceId).textContent.trim();
+  const button = document.getElementById(buttonId);
+  try { await navigator.clipboard.writeText(text); button.textContent = 'Copied!'; }
+  catch (error) {
+    const range = document.createRange(); range.selectNodeContents(document.getElementById(sourceId));
+    const selection = window.getSelection(); selection.removeAllRanges(); selection.addRange(range);
+    button.textContent = 'Select and copy';
+  }
+  setTimeout(() => { button.textContent = defaultLabel; }, 2200);
+}
+document.getElementById('copyMint').addEventListener('click', () => copyText('mintAddress','copyMint','Copy address'));
+document.getElementById('copyMetadata').addEventListener('click', () => copyText('metadataUri','copyMetadata','Copy metadata URI'));
+</script>
+</body>
+</html>
